@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package riiid.pingpong;
+
+message Ping {
+    string hello = 1;
+}
+
+message Pong {
+    string world = 1;
+}
+
+
+service PingPongService {
+    rpc PingPong(Ping) returns (Pong) {}
+}
