@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "pbkit/interface-pingpong-server";
+option go_package = "pbkit/interface-pingpong-server;interface_pingpong_server";
 
 package riiid.pingpong;
 
