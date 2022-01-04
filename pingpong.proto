@@ -2,7 +2,7 @@ syntax = "proto3";
 
 option go_package = "pbkit/interface-pingpong-server;interface_pingpong_server";
 
-package riiid.pingpong;
+package pbkit.pingpong;
 
 message Ping {
     string hello = 1;
