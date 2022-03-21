@@ -4,6 +4,8 @@ option go_package = "pbkit/interface-pingpong-server;interface_pingpong_server";
 
 package pbkit.pingpong;
 
+import "google/rpc/code.proto";
+
 service PingPongService {
     rpc PingPong(Ping) returns (Pong) {}
 }
