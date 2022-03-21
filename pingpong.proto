@@ -4,6 +4,10 @@ option go_package = "pbkit/interface-pingpong-server;interface_pingpong_server";
 
 package pbkit.pingpong;
 
+service PingPongService {
+    rpc PingPong(Ping) returns (Pong) {}
+}
+
 message Ping {
     string hello = 1;
 }
@@ -13,6 +17,12 @@ message Pong {
 }
 
 
-service PingPongService {
-    rpc PingPong(Ping) returns (Pong) {}
+service ThrowService {
+    rpc Throw(ErrorReq) returns (ThrowResponse) {}
 }
+
+message ThrowRequest {
+    google.rpc.Code code = 1;
+}
+
+message ThrowResponse {}
