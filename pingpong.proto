@@ -18,7 +18,7 @@ message Pong {
 
 
 service ThrowService {
-    rpc Throw(ErrorReq) returns (ThrowResponse) {}
+    rpc Throw(ThrowRequest) returns (ThrowResponse) {}
 }
 
 message ThrowRequest {
